@@ -8,33 +8,141 @@
     <body>
         <div class="content stage">
         </div>
+
         <div class="content library">
-            <div class="card" cardName="home" action="">
-                <h1>This is the home card!</h1>
-                <p>In essence, a card is just a rectangular region which contains content.  This content could be text, images, lists, etc... The card UI methaphor  dictates the interaction and layout of these regions.</p>
-            </div>
-            
-            <div class="card" cardName="card2" action="">
-                <div class="card-image image1"></div>
-                <h1>Oh my, an image!</h1>
-                <p>Yep, just some simple content ecapsulated in this card.</p>
-            </div>
-            
-            
-            <div class="card" cardName="card3" action="">
-                <div class="card-image image2">
-                    <div class="banner"></div>
-                    <h2>Image, Banner, &amp; HTML</h2>
+            <div class="cardSet" cardSetName="home">
+                <div class="card" cardName="Contacts" action="">
+                    <h1>Contacts</h1>                    
                 </div>
-                <p>All standard HTML structures, styled with CSS.</p>
+                
+                <div class="card" cardName="Social" action="">                    
+                    <h1>Social Media</h1>
+                </div>
+                
+                <div class="card" cardName="Awards" action="">
+                    <h1>Awards</h1>
+                </div>
+
+                <div class="card" cardName="FAQs" action="loadCardSetByName('FAQs');">
+                    <h1>FAQs</h1>
+                </div>
+
+                <div class="card" cardName="Feedback" action="">
+                    <h1>Feedback</h1>
+                </div>                
+            </div>
+
+            <div class="cardSet" cardSetName="Contacts">
+
+            </div>
+
+            <div class="cardSet" cardSetName="Social">
+                
+            </div>
+
+            <div class="cardSet" cardSetName="Awards">
+                
+            </div>
+
+            <div class="cardSet" cardSetName="FAQs">
+                <div class="card" cardName="Benefits" action="loadCardSetByName('FAQs_Benefits');">
+                    <h1>Benefits</h1>                    
+                </div>
+
+                <div class="card" cardName="Goals" action="loadCardSetByName('FAQs_Goals');">
+                    <h1>Goals</h1>                    
+                </div>
+
+                <div class="card" cardName="Incentives" action="loadCardSetByName('FAQs_Incentives');">
+                    <h1>Incentives</h1>                    
+                </div>
+
+                <div class="card" cardName="WorkProcedure" action="loadCardSetByName('FAQs_WorkProcedure');">
+                    <h1>Work Procedure</h1>                    
+                </div>
+            </div>
+
+            <div class="cardSet" cardSetName="FAQs_Benefits">
+                <div class="card" cardName="FAQs_Benefits_Vacation" action="loadDynamicCard('Very carefully.');">
+                    <h1>How does vacation time work?</h1>                    
+                </div>
+
+                <div class="card" cardName="FAQs_Benefits_LeaveAbsence" action="loadDynamicCard('When you leave...absently.');">
+                    <h1>What is a leave of absence?</h1>                    
+                </div>
+
+                <div class="card" cardName="FAQs_Benefits_PaidHolidays" action="loadDynamicCard('Duh.');">
+                    <h1>Am I paid on holidays?</h1>                    
+                </div>
+
+                <div class="card" cardName="FAQs_Benefits_Insurance" action="loadDynamicCard('Duh.');">
+                    <h1>Can I get insurance?</h1>                    
+                </div>
+            </div>
+
+            <div class="cardSet" cardSetName="FAQs_Goals">
+                <div class="card" cardName="FAQs_Goals_PersonalGoals" action="">
+                    <h1>What are my individual goals?</h1>                    
+                </div>
+
+                <div class="card" cardName="FAQs_Goals_CompanyGoals" action="">
+                    <h1>What are the company's goals?</h1>                    
+                </div>
+
+                <div class="card" cardName="FAQs_Goals_CustomerGoals" action="">
+                    <h1>What are the customer goals?</h1>                    
+                </div>
+
+                <div class="card" cardName="FAQs_Goals_CommunityGoals" action="">
+                    <h1>What are the community goals?</h1>                    
+                </div>
+            </div>
+
+            <div class="cardSet" cardSetName="FAQs_Incentives">
+                <div class="card" cardName="FAQs_Incentives_Wellness" action="">
+                    <h1>What is the <i>Wellness Program</i>?</h1>                    
+                </div>
+
+                <div class="card" cardName="FAQs_Incentives_PersonalPC" action="">
+                    <h1>What is a <i>Personal PC Loan</i>?</h1>                    
+                </div>
+
+                <div class="card" cardName="FAQs_Incentives_Tuition" action="">
+                    <h1>Is there tuition reimbursement?</h1>                    
+                </div>
+            </div>
+
+            <div class="cardSet" cardSetName="FAQs_WorkProcedure">
+                <div class="card" cardName="FAQs_WorkProcedure_DressCode" action="">
+                    <h1>What is the dress code?</h1>                    
+                </div>
+
+                <div class="card" cardName="FAQs_WorkProcedure_WorkHome" action="">
+                    <h1>Am I able to work from home?</h1>                    
+                </div>
+
+                <div class="card" cardName="FAQs_WorkProcedure_WorkSched" action="">
+                    <h1>What is a typical work schedule?</h1>
+                </div>
+
+                <div class="card" cardName="FAQs_WorkProcedure_TimeEntry" action="">
+                    <h1>How do I report me time for work?</h1>                    
+                </div>
+            </div>
+
+            <div class="cardSet" cardSetName="Feedback">
+                
             </div>
         </div>
+
         <div class="content system">
             <div class="card backCard" cardName="backCard" action="goBack();">
-                <div class="card-image">
-                    <h1>Back</h1>
-                </div>
+                <h1>Back</h1>
+            </div>
+            <div class="card blankCard" cardName="blankCard" action="">
+                <h1></h1>
             </div>
         </div>
+
     </body>
 </html>

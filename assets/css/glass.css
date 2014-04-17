@@ -11,6 +11,10 @@ body {
     display: none;
 }
 
+div div {
+    display: none;
+}
+
 .content {  
     position:fixed;
     top:62px;
